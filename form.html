@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<link href="css/form.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+jQuery(document).ready(function(){
+	$('#form').submit(function(){				  
+		var action = $(this).attr('action');
+		$.post(action, { 
+			Company_Details: $('#Company_Details').val(),
+			Primary_Contact: $('#Primary_Contact').val(),
+			email: $('#email').val(),
+			Telephone: $('#Telephone').val(),
+			Website_Address: $('#Website_Address').val(),
+			Sector: $('#Sector').val(),
+			Project_Deadlines: $('#Project_Deadlines').val(),
+			Project_Info: $('#Project_Info').val(),
+			Intended_Audience: $('#Intended_Audience').val(),
+			Other_Information: $('#Other_Information').val()
+		},
+			function(data){
+				$('#form #submit').attr('disabled','');
+				$('.response').remove();
+				$('#form').after('<h1 class="response">'+data+'</h1>');
+				$('.response').slideDown();
+				if(data=='Message sent!') $('#form').SlideUp();
+			}
+		); 
+		return false;
+	});
+});
+// ]]>
+</script>
+</head>
+
+<body class="form">
+<form id="form" action="contact.php" method="post">
+		
+			<fieldset>
+			
+				<legend>Contact Information</legend>
+		
+				<ol>
+					
+					<li>
+						<label for="Company_Details">Company</label>
+						<input id="Company_Details" name="Company_Details" type="text" placeholder="Company or Organisation Name" required autofocus />
+					</li>
+					
+					<li>
+						<label for="Primary_Contact">Primary Contact</label>
+						<input id="Primary_Contact" name="Primary_Contact" type="text" placeholder="Name and Title" required />
+					</li>
+					
+					<li>
+						<label for="email">Email Address</label>
+						<input id="email" name="email" type="email" placeholder="Eg. info@example.com" required />
+					</li>
+                    
+                    <li>
+						<label for="Telephone">Contact Tel</label>
+						<input id="Telephone" name="Telephone" type="tel" placeholder="Eg. +447500000000" required />
+					</li>
+                    
+                    <li>
+						<label for="Website_Address">Web Address</label>
+						<input id="Website_Address" name="Website_Address" type="text" placeholder="Eg. www.example.com" required />
+					</li>
+<li>
+						<label for="Sector">Your Sector ?</label>
+						<textarea id="Sector" name="Sector" rows="5"  placeholder="Eg. local authority, cultural tourism, youth arts, cultural festivals, specific art form development?" required></textarea>
+					</li>				</ol>
+			
+			</fieldset>
+			
+			<fieldset>
+			
+				<legend>Project Information:</legend>
+				
+				<ol>
+				
+					<li>
+						<label for="Project_Deadlines">Start &amp; End Date</label>
+						<textarea id="Project_Deadlines" name="Project_Deadlines" rows="5" placeholder="When do you expect the project to start and when does it need to be completed?" required></textarea>
+					</li>
+					
+					<li>
+						<label for="Project_Info">Your Project</label>
+						<textarea id="Project_Info" name="Project_Info" rows="5" placeholder="Please tell us what your idea is or what you would like to talk with us about?" required></textarea>
+					</li>
+					
+				<li>
+						<label for="Intended_Audience">Intended Audience</label>
+						<textarea id="Intended_Audience" name="Intended_Audience" rows="5" placeholder="Who is the intended audience?" required></textarea>
+					</li>
+                    
+				
+				</ol>
+			
+			</fieldset>
+			
+			<fieldset>
+			
+				<legend>Additional Notes/Comments </legend>
+				
+				<ol>
+				
+					<li>
+						<label for="Other_Information">Other Info</label>
+						<textarea id="Other_Information" name="Other_Information" rows="5" placeholder="Please let us know any other info that you feel is relevant" required></textarea>
+					</li>
+				</ol>
+				
+			</fieldset>
+			
+			<fieldset>
+			
+				<button type="submit" id="submit">Send</button>
+			
+			</fieldset>
+		
+		</form>
+
+</body>
+</html>
+
+<!-- Localized -->

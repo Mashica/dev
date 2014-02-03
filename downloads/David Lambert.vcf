@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Lambert;David;;;
+FN:David Lambert
+ORG:cultural solutions uk;
+EMAIL;type=INTERNET;type=WORK;type=pref:david@culturalsolutions.co.uk
+TEL;type=WORK;type=pref:00 (44) (0) 7880 908 539
+item1.ADR;type=WORK;type=pref:;;Lincoln UK;;;;
+item1.X-ABADR:us
+CATEGORIES:CLIENTS
+X-ABUID:932C4F07-6E3D-4CDD-84D1-8B502F5332CE\:ABPerson
+END:VCARD
