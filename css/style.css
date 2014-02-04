@@ -94,7 +94,9 @@ background: url(../images/down.png) bottom right no-repeat;
 .twothird {width: 670px; float: left; display: block;margin: 0 0 0 40px;}
 .emptyleft { width: 150px; height: 100px; float: left;}
 
-.sectiontitle {width: 120px; height: 120px; background: url(../images/small.png) no-repeat; text-align: center; float: left;}
+.sectiontitle {width: 120px; height: 120px; background: url(../images/small.png) no-repeat; text-align: center; float: left; 
+background-color: SlateBlue;
+}
 .sectiontitle p {
 	font-family: 'Oswald', arial, serif;
 	font-size: 14px;
@@ -128,21 +130,37 @@ background: url(../images/down.png) bottom right no-repeat;
 }
 
 /* SECTIONS */
-.home {background: url(../images/homebg.jpg) center top no-repeat; margin:-30px 0 0 0; height: 1000px;}
+.home {background: url(../images/homebg.jpg) center top no-repeat; margin:-30px 0 0 0; height: 1000px;
+background-color: red;
+}
 
-.wedo {background: url(../images/aboutbg.png) center bottom no-repeat;margin:0; height: 1400px; padding: 100px 0 0 0;}
+.wedo {background: url(../images/aboutbg.png) center bottom no-repeat;margin:0; height: 1400px; padding: 100px 0 0 0;
+background-color: teal;
+}
 
-.about {background: url(../images/latestbg.png) center bottom no-repeat;margin:0; height: 1400px; padding: 120px 0 0 0;}
+.about {background: url(../images/latestbg.png) center bottom no-repeat;margin:0; height: 1400px; padding: 120px 0 0 0;
+background-color: aqua;
+}
 
-.did {background: url(../images/aboutbg.png) center bottom no-repeat; margin:0; height: 1400px;padding: 150px 0 0 0;}
+.did {background: url(../images/aboutbg.png) center bottom no-repeat; margin:0; height: 1400px;padding: 150px 0 0 0;
+background-color: purple;
+}
 
-.doing {background: url(../images/latestbg.png) center bottom no-repeat; margin:0; height: 1400px;padding: 100px 0 0 0;}
+.doing {background: url(../images/latestbg.png) center bottom no-repeat; margin:0; height: 1400px;padding: 100px 0 0 0;
+background-color: yellow;
+}
 
-.contact {background:url(../images/aboutbg.png) center top no-repeat; margin:0; height: 900px;padding: 100px 0 0 0;}
+.contact {background:url(../images/aboutbg.png) center top no-repeat; margin:0; height: 900px;padding: 100px 0 0 0;
+background-color: blue;
+}
 
-.doing .content, .contact .content {background: url(../images/lrgcirc.png) center no-repeat; height: 1100px; width: 1024px; margin: 0 auto; position: relative; top: -50px;}
+.doing .content, .contact .content {background: url(../images/lrgcirc.png) center no-repeat; height: 1100px; width: 1024px; margin: 0 auto; position: relative; top: -50px;
+background-color: green;
+}
 
-.about .content { background: url(../images/asscirc.png) bottom center no-repeat; height: 830px}
+.about .content { background: url(../images/asscirc.png) bottom center no-repeat; height: 830px
+background-color: orange;
+}
 
 /* PARRALLAX*/
 .parallax-viewport {
@@ -215,7 +233,9 @@ text-indent: 0;
 .dng {background-position: 0 -564px;} .dng:hover {background-position: -243px -564px;}
 .cntct {background-position: 0 -705px;} .cntct:hover {background-position: -243px -705px;}
 
-.logo {background:  url(../images/logo.png) left bottom no-repeat; width: 300px; height: 150px; display:block; margin:0 0 50px 0; position:relative; z-index: 9999;}
+/*.logo {background:  url(../images/logo.png) left bottom no-repeat; width: 300px; height: 150px; display:block; margin:0 0 50px 0; position:relative; z-index: 9999;}*/
+.logo {background:  url(../images/logotipo.png) left center no-repeat; width: 177px; height: 150px; display:block; margin:0 0 50px 0; position:relative; z-index: 9999;
+background-color: RoyalBlue;}
 .logo:hover {-webkit-animation-name: logo;-webkit-animation-duration: .2s;-webkit-animation-iteration-count: 1;-webkit-animation-timing-function: linear;}
 
 /* FOOTER */

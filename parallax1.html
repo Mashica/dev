@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html><head><title>TEST 1 - parallax</title>
+
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/movement.css" rel="stylesheet" type="text/css" />
+<!-- <link href="css/colorbox.css" rel="stylesheet" type="text/css" /> -->
+
+
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+<script src="js/jquery.tools.min.js"></script>
+<!-- <script src="js/colorbox.js" type="text/javascript"></script> -->
+<script src="js/scrollingpara.js" type="text/javascript"></script>
+<!-- <script src="js/ticker.js" type="text/javascript"></script> -->
+<!-- <script src="js/tweetable.js" type="text/javascript"></script> -->
+<script src="js/jflickrfeed.min.js"></script>
+<!-- <script src="js/setup.js"></script> -->
+<script src="js/jquery.jparallax.min.js" type="text/javascript"></script>
+
+
+<script> 
+// $(document).ready(function() {
+// $("#associates").scrollable().navigator();	
+// $("#successes").scrollable().navigator();
+// });
+</script> 
+
+
+<script src="js/jquery.delay.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/landscape-header.js"></script>
+
+
+
+<script type="text/javascript">
+// $(function(){
+//     $("ul#tweet").liScroll({travelocity: 0.05});
+// });
+</script>
+
+
+
+
+<!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="css/ie7.css">
+<![endif]-->
+
+
+
+</head>
+<body>
+
+
+<section class="home" id="home"> 
+
+  <div class="content">
+    
+   	<div class="logo"></div>
+       
+    <div id="port">
+        <img class="parallax-layer" src="images/layer1.png" alt="" style="width:964px; height:480px;"/> 
+        <img class="parallax-layer" src="images/layer2.png" alt="" style="width:900px; height:510px;"/> 
+        <img class="parallax-layer" src="images/layer3.png" alt="" style="width:878px; height:400px;"/>
+        <img class="parallax-layer" src="images/layer4.png" alt="" style="width:858px; height:380px;"/>
+        <img class="parallax-layer" src="images/logo.png" alt="" style="width:464px; height:280px;"/> 
+        <img class="parallax-layer" src="images/logo.png" alt="" style="width:400px; height:310px;"/> 
+        <img class="parallax-layer" src="images/logo.png" alt="" style="width:478px; height:200px;"/>
+        <img class="parallax-layer" src="images/logo.png" alt="" style="width:458px; height:180px;"/>
+    </div>
+
+
+    <div class="main-desc">
+		<header>
+			<h4><b>Something important:</b> explanation of the title &amp; a nice thing. Really</h4>
+			<h1>of the nicest things <br/>you've ever seen</h1>
+			<h2 class="marg-60"><span class="hgt2">There are all kinds of things in the world <a href="#wedo" class="smooth">especially nice things</a> and other stuff <br />
+			  with art, sport, cycling, eating, shitting, and other things. We also are good with children <br />
+			especially good children &amp; and their friends.</span></h2>
+		</header>
+
+    </div>  <!--END OF main-desc !--> 
+  </div><!--END OF CONTENT !-->
+</section><!--END OF HOME !-->
+
+
+
+<div class="clear"></div>    
+
+
+
+
+
+
+
+<section class="wedo" id="wedo">
+<div class="content">
+</div><!--end of content !-->
+</section><!--end of what we do !-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="about" id="about">
+<div class="content">
+</div><!--END OF CONTENT !-->
+</section>
+<!--END OF ABOUT !-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="did" id="did">
+<div class="content">
+</div><!--END OF CONTENT !-->
+</section><!--END OF DID !-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="doing" id="doing">
+	<div class="content">
+    
+    </div><!--END OF CONTENT !-->
+</section><!--END OF DOING !-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="contact" id="contact">
+<div class="content">
+</div><!--END OF CONTENT !-->    
+</section><!--END OF CONTACT !-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+		
+        	<div class="content">
+        	<p>&copy; Class Act OAX 2014 &bull; Registered in MY ASS! &bull; site by:</p><p><a href="http://mashica.com" target="_blank"> SPR-MSH&nbsp;</a></p><p>&bull;</p><p><a href="http://validator.w3.org/check?uri=http://mashica.com/" target="_blank" class="html5"></a></p><p> &bull;&nbsp;</p><p><a href="#home" class="smooth"> back to top &uarr;</a></p>
+        
+  </div><!--END OF FOOTER CONTENT !-->
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+    // Declare parallax on layers
+    jQuery('.parallax-layer').parallax({
+        mouseport: jQuery("#port")
+    });
+});
+</script>
+
+
+
+
+<script type="text/javascript"> 
+$(function() {
+    $.scrollingParallax('images/para.png', {
+        bgHeight : '3000px',
+		bgWidth : '1024px',
+        staticSpeed : .25,
+        staticScrollLimit : false
+    });
+}); 
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
